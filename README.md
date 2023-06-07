@@ -1,2 +1,0 @@
-# abdullah-abdullatif.github.io
-
