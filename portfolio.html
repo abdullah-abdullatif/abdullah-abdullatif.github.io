@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js classic-page-layout" data-click-ripple-animation="yes">
+<!-- InstanceBegin template="/Templates/layout.dwt" codeOutsideHTMLIsLocked="false" -->
+
 <head>
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Abdullah Abdullatif | Web Developer Portfolio">
-    <meta name="keywords" content="WordPress Developer, WooCommerce, Portfolio, Web Developer">
+    <meta name="keywords" content="WordPress Developer, WooCommerce, Web Developer, Portfolio">
     <meta name="author" content="Abdullah Abdullatif">
     <meta name="theme-color" content="#1755cf" />
 
@@ -24,39 +26,74 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/768.css">
 
-    <!-- SCRIPTS -->
+    <!-- INITIAL SCRIPT -->
     <script src="js/jquery.js"></script>
 
 </head>
 
 <body>
 
+<!-- PAGE -->
 <div id="page" class="hfeed site">
 
     <main id="main" class="site-main cd-main">
 
-        <!-- HEADER -->
-        <header class="header">
+        <!-- HEADER (SAME AS HOME) -->
+        <header id="masthead" class="header" role="banner">
+
             <div class="header-wrap layout-full">
-                <img src="images/home/cover.jpg" alt="Abdullah Abdullatif">
+
+                <!-- SAME IMAGE AS HOME -->
+                <img src="images/home/my_picture_2025_wide.jpg" alt="profile-image">
+
                 <div class="home-heading">
                     <div class="home-logo">
+
                         <p class="home-job-title">Web Developer</p>
+
+                        <p class="home-marquee">
+                            Building creative websites for the world's people. Always in search
+                            of the great user experience.
+                            Building creative websites for the world's people. Always in search
+                            of the great user experience.
+                        </p>
+
+                        <i class="home-logo-left"><span>Web</span></i>
+
                         <i class="home-logo-center">
+                            <span class="home-icon">
+                                <img src="images/home/icon.svg" alt="icon" />
+                            </span>
+                            <span class="home-text-container">
+                                <span class="home-text-container-placeholder">Abdullah Abdullatif</span>
+                            </span>
                             <span class="home-text">Abdullah Abdullatif</span>
                         </i>
+
+                        <i class="home-logo-right"><span>Developer</span></i>
+
                     </div>
                 </div>
+
+                <!-- HOME BG LOGO -->
+                <div class="home-bg-logo">
+                    <img src="images/home/icon-bg2.svg" alt="icon" />
+                </div>
+
             </div>
+
         </header>
+        <!-- /HEADER -->
 
         <!-- CONTENT -->
         <div class="site-middle">
+
             <div class="layout-medium">
                 <div id="primary" class="content-area">
                     <div id="content" class="site-content">
 
                         <article class="page hentry">
+
                             <header class="entry-header">
                                 <h1 class="entry-title">Portfolio</h1>
                                 <p>Selected real-world projects I’ve built and currently manage.</p>
@@ -75,12 +112,25 @@
                                 <!-- PORTFOLIO GRID -->
                                 <div class="portfolio-items media-grid masonry" data-layout="masonry" data-item-width="360">
 
+                                    <!-- Etriplesoft -->
+                                    <div class="media-cell web hentry">
+                                        <div class="media-box">
+                                            <img src="images/portfolio/etriplesoft.jpg" alt="Etriplesoft">
+                                            <div class="mask"></div>
+                                            <a href="https://etriplesoft.com/" target="_blank" rel="noopener"></a>
+                                        </div>
+                                        <div class="media-cell-desc">
+                                            <h3>Etriplesoft</h3>
+                                            <p class="category">Software Company · Web & ERP Solutions</p>
+                                        </div>
+                                    </div>
+
                                     <!-- Sustain-X -->
                                     <div class="media-cell web ecommerce hentry">
                                         <div class="media-box">
                                             <img src="images/portfolio/sustainx.jpg" alt="Sustain-X">
                                             <div class="mask"></div>
-                                            <a href="https://sustain-x.com" target="_blank"></a>
+                                            <a href="https://sustain-x.com" target="_blank" rel="noopener"></a>
                                         </div>
                                         <div class="media-cell-desc">
                                             <h3>Sustain-X</h3>
@@ -93,7 +143,7 @@
                                         <div class="media-box">
                                             <img src="images/portfolio/mtown.jpg" alt="MTown Real Estate">
                                             <div class="mask"></div>
-                                            <a href="#" target="_blank"></a>
+                                            <a href="https://mtownre.com" target="_blank" rel="noopener"></a>
                                         </div>
                                         <div class="media-cell-desc">
                                             <h3>MTown Real Estate</h3>
@@ -101,16 +151,16 @@
                                         </div>
                                     </div>
 
-                                    <!-- Super Math Academy -->
-                                    <div class="media-cell web elearning hentry">
+                                    <!-- Ahmed Tariq Lifestyle -->
+                                    <div class="media-cell web hentry">
                                         <div class="media-box">
-                                            <img src="images/portfolio/sma.jpg" alt="Super Math Academy">
+                                            <img src="images/portfolio/ahmed-tariq.jpg" alt="Ahmed Tariq Lifestyle">
                                             <div class="mask"></div>
-                                            <a href="https://supermath-academy.com" target="_blank"></a>
+                                            <a href="https://ahmedtariq-lifestyle.com/en/quiz/" target="_blank" rel="noopener"></a>
                                         </div>
                                         <div class="media-cell-desc">
-                                            <h3>Super Math Academy</h3>
-                                            <p class="category">E-Learning Platform</p>
+                                            <h3>Ahmed Tariq Lifestyle</h3>
+                                            <p class="category">Wellness Quiz · Web Application</p>
                                         </div>
                                     </div>
 
@@ -119,48 +169,38 @@
                                         <div class="media-box">
                                             <img src="images/portfolio/ednoor.jpg" alt="Ednoor">
                                             <div class="mask"></div>
-                                            <a href="https://ednoor.com" target="_blank"></a>
+                                            <a href="https://ednoor.com" target="_blank" rel="noopener"></a>
                                         </div>
                                         <div class="media-cell-desc">
                                             <h3>Ednoor</h3>
-                                            <p class="category">E-Learning Website</p>
+                                            <p class="category">E-Learning Platform</p>
                                         </div>
                                     </div>
-                                    
-                                    <!-- Etriplesoft -->
-                                    <div class="media-cell web hentry">
+
+                                    <!-- Super Math Academy -->
+                                    <div class="media-cell web elearning hentry">
                                         <div class="media-box">
-                                            <img src="images/portfolio/etriplesoft.jpg" alt="Etriplesoft Software Company">
+                                            <img src="images/portfolio/sma.jpg" alt="Super Math Academy">
                                             <div class="mask"></div>
-                                            <a href="#" target="_blank"></a>
+                                            <a href="https://supermath-academy.com" target="_blank" rel="noopener"></a>
                                         </div>
                                         <div class="media-cell-desc">
-                                            <h3>Etriplesoft</h3>
-                                            <p class="category">Software Company · Web & ERP Solutions</p>
-                                        </div>
-                                    </div>
-                                    
-                                    <!-- Ahmed Tariq -->
-                                    <div class="media-cell web hentry">
-                                        <div class="media-box">
-                                            <img src="images/portfolio/ahmed-tariq.jpg" alt="Ahmed Tariq Fitness">
-                                            <div class="mask"></div>
-                                        </div>
-                                        <div class="media-cell-desc">
-                                            <h3>Ahmed Tariq Fitness</h3>
-                                            <p class="category">Wellness Test · UI</p>
+                                            <h3>Super Math Academy</h3>
+                                            <p class="category">E-Learning Platform</p>
                                         </div>
                                     </div>
 
                                 </div>
-                                <!-- PORTFOLIO GRID -->
+                                <!-- /PORTFOLIO GRID -->
 
                             </div>
+
                         </article>
 
                     </div>
                 </div>
             </div>
+
         </div>
 
         <!-- FOOTER -->
@@ -171,15 +211,18 @@
         </footer>
 
     </main>
+
 </div>
 
 <!-- SCRIPTS -->
 <script src="js/tween-max.js"></script>
+<script src="js/jquery-address.js"></script>
+<script src="js/nprogress/nprogress.js"></script>
 <script src="js/jquery-isotope.js"></script>
 <script src="js/imagesloaded.js"></script>
 <script src="js/jquery.magnific-popup/jquery-magnific-popup.js"></script>
 <script src="js/main.js"></script>
 
 </body>
+<!-- InstanceEnd -->
 </html>
-
