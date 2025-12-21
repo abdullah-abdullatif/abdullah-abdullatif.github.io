@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js classic-page-layout">
+<!--
+=========================================================
+PORTFOLIO PAGE
+- Compatible with Pixelwars One-Page AJAX
+- Uses required selector: .page-single > .hentry
+- All unused layout parts are COMMENTED (not deleted)
+=========================================================
+-->
+
 <head>
 
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Abdullah Abdullatif | Web Developer Portfolio">
     <meta name="author" content="Abdullah Abdullatif">
 
     <title>Portfolio | Abdullah Abdullatif</title>
 
-    <!-- STYLES (already loaded in index.html, kept for standalone use) -->
+    <!-- ================================================= -->
+    <!-- STYLES (COMMENTED – already loaded in index.html) -->
+    <!-- KEEP for future standalone usage                 -->
+    <!-- ================================================= -->
     <!--
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -17,6 +29,7 @@
     <link rel="stylesheet" href="css/768.css">
     -->
 
+    <!-- jQuery is required for Pixelwars AJAX -->
     <script src="js/jquery.js"></script>
 
 </head>
@@ -24,12 +37,10 @@
 <body>
 
 <!-- ===================================================== -->
-<!-- COMMENTED: FULL PAGE LAYOUT (NOT USED IN ONE-PAGE)    -->
-<!-- KEEP FOR FUTURE STANDALONE VERSION                   -->
+<!-- COMMENTED: FULL PAGE WRAPPER (STANDALONE MODE ONLY)  -->
 <!-- ===================================================== -->
 <!--
 <div id="page" class="hfeed site">
-
     <main id="main" class="site-main cd-main">
 
         <header id="masthead" class="header" role="banner">
@@ -40,116 +51,130 @@
 -->
 
 <!-- ===================================================== -->
-<!-- ✅ ACTIVE CONTENT — REQUIRED BY YOUR PIXELWARS THEME -->
+<!-- ✅ REQUIRED BY YOUR Pixelwars main.js                 -->
+<!-- DO NOT REMOVE OR RENAME                              -->
+<!-- JS SELECTOR: .page-single > .hentry                  -->
 <!-- ===================================================== -->
 
-<article class="page hentry">
+<div class="page-single page-layout">
 
-    <header class="entry-header">
-        <h1 class="entry-title">Portfolio</h1>
-        <p>Selected real-world projects I’ve built and currently manage.</p>
-    </header>
+    <article class="page hentry">
 
-    <div class="entry-content">
+        <!-- PAGE HEADER -->
+        <header class="entry-header">
+            <h1 class="entry-title">Portfolio</h1>
+            <p>Selected real-world projects I’ve built and currently manage.</p>
+        </header>
 
-        <!-- FILTERS -->
-        <ul id="filters" class="filters">
-            <li class="current"><a href="#" data-filter="*">All</a></li>
-            <li><a href="#" data-filter=".web">Web</a></li>
-            <li><a href="#" data-filter=".ecommerce">E-Commerce</a></li>
-            <li><a href="#" data-filter=".elearning">E-Learning</a></li>
-        </ul>
+        <!-- PAGE CONTENT -->
+        <div class="entry-content">
 
-        <!-- PORTFOLIO GRID -->
-        <div class="portfolio-items media-grid masonry"
-             data-layout="masonry" data-item-width="360">
+            <!-- FILTERS -->
+            <ul id="filters" class="filters">
+                <li class="current"><a href="#" data-filter="*">All</a></li>
+                <li><a href="#" data-filter=".web">Web</a></li>
+                <li><a href="#" data-filter=".ecommerce">E-Commerce</a></li>
+                <li><a href="#" data-filter=".elearning">E-Learning</a></li>
+            </ul>
 
-            <!-- MTown -->
-            <div class="media-cell web hentry">
-                <div class="media-box">
-                    <img src="images/portfolio/mtown.jpg" alt="MTown Real Estate">
-                    <div class="mask"></div>
-                    <a href="https://mtownre.com" target="_blank"></a>
+            <!-- ================================================= -->
+            <!-- PORTFOLIO GRID                                  -->
+            <!-- ================================================= -->
+            <div class="portfolio-items media-grid masonry"
+                 data-layout="masonry"
+                 data-item-width="360">
+
+                <!-- MTown Real Estate -->
+                <div class="media-cell web hentry">
+                    <div class="media-box">
+                        <img src="images/portfolio/mtown.jpg" alt="MTown Real Estate">
+                        <div class="mask"></div>
+                        <a href="https://mtownre.com" target="_blank"></a>
+                    </div>
+                    <div class="media-cell-desc">
+                        <h3>MTown Real Estate</h3>
+                        <p class="category">Real Estate · UAE</p>
+                    </div>
                 </div>
-                <div class="media-cell-desc">
-                    <h3>MTown Real Estate</h3>
-                    <p class="category">Real Estate · UAE</p>
+
+                <!-- Sustain-X -->
+                <div class="media-cell web ecommerce hentry">
+                    <div class="media-box">
+                        <img src="images/portfolio/sustainx.jpg" alt="Sustain-X">
+                        <div class="mask"></div>
+                        <a href="https://sustain-x.com" target="_blank"></a>
+                    </div>
+                    <div class="media-cell-desc">
+                        <h3>Sustain-X</h3>
+                        <p class="category">WooCommerce · Fitness</p>
+                    </div>
                 </div>
+
+                <!-- Ednoor -->
+                <div class="media-cell web elearning hentry">
+                    <div class="media-box">
+                        <img src="images/portfolio/ednoor.jpg" alt="Ednoor">
+                        <div class="mask"></div>
+                        <a href="https://ednoor.com" target="_blank"></a>
+                    </div>
+                    <div class="media-cell-desc">
+                        <h3>Ednoor</h3>
+                        <p class="category">E-Learning Platform</p>
+                    </div>
+                </div>
+
+                <!-- Super Math Academy -->
+                <div class="media-cell web elearning hentry">
+                    <div class="media-box">
+                        <img src="images/portfolio/sma.jpg" alt="Super Math Academy">
+                        <div class="mask"></div>
+                        <a href="https://supermath-academy.com" target="_blank"></a>
+                    </div>
+                    <div class="media-cell-desc">
+                        <h3>Super Math Academy</h3>
+                        <p class="category">E-Learning Platform</p>
+                    </div>
+                </div>
+
+                <!-- Etriplesoft -->
+                <div class="media-cell web hentry">
+                    <div class="media-box">
+                        <img src="images/portfolio/etriplesoft.jpg" alt="Etriplesoft">
+                        <div class="mask"></div>
+                        <a href="https://etriplesoft.com" target="_blank"></a>
+                    </div>
+                    <div class="media-cell-desc">
+                        <h3>Etriplesoft</h3>
+                        <p class="category">Software Company</p>
+                    </div>
+                </div>
+
+                <!-- Ahmed Tariq Lifestyle -->
+                <div class="media-cell web hentry">
+                    <div class="media-box">
+                        <img src="images/portfolio/ahmed-tariq.jpg" alt="Ahmed Tariq Lifestyle">
+                        <div class="mask"></div>
+                        <a href="https://ahmedtariq-lifestyle.com/en/quiz/" target="_blank"></a>
+                    </div>
+                    <div class="media-cell-desc">
+                        <h3>Ahmed Tariq Lifestyle</h3>
+                        <p class="category">Wellness Quiz</p>
+                    </div>
+                </div>
+
             </div>
-
-            <!-- Sustain-X -->
-            <div class="media-cell web ecommerce hentry">
-                <div class="media-box">
-                    <img src="images/portfolio/sustainx.jpg" alt="Sustain-X">
-                    <div class="mask"></div>
-                    <a href="https://sustain-x.com" target="_blank"></a>
-                </div>
-                <div class="media-cell-desc">
-                    <h3>Sustain-X</h3>
-                    <p class="category">WooCommerce · Fitness</p>
-                </div>
-            </div>
-
-            <!-- Ednoor -->
-            <div class="media-cell web elearning hentry">
-                <div class="media-box">
-                    <img src="images/portfolio/ednoor.jpg" alt="Ednoor">
-                    <div class="mask"></div>
-                    <a href="https://ednoor.com" target="_blank"></a>
-                </div>
-                <div class="media-cell-desc">
-                    <h3>Ednoor</h3>
-                    <p class="category">E-Learning Platform</p>
-                </div>
-            </div>
-
-            <!-- Super Math Academy -->
-            <div class="media-cell web elearning hentry">
-                <div class="media-box">
-                    <img src="images/portfolio/sma.jpg" alt="Super Math Academy">
-                    <div class="mask"></div>
-                    <a href="https://supermath-academy.com" target="_blank"></a>
-                </div>
-                <div class="media-cell-desc">
-                    <h3>Super Math Academy</h3>
-                    <p class="category">E-Learning Platform</p>
-                </div>
-            </div>
-
-            <!-- Etriplesoft -->
-            <div class="media-cell web hentry">
-                <div class="media-box">
-                    <img src="images/portfolio/etriplesoft.jpg" alt="Etriplesoft">
-                    <div class="mask"></div>
-                    <a href="https://etriplesoft.com" target="_blank"></a>
-                </div>
-                <div class="media-cell-desc">
-                    <h3>Etriplesoft</h3>
-                    <p class="category">Software Company</p>
-                </div>
-            </div>
-
-            <!-- Ahmed Tariq Lifestyle -->
-            <div class="media-cell web hentry">
-                <div class="media-box">
-                    <img src="images/portfolio/ahmed-tariq.jpg" alt="Ahmed Tariq Lifestyle">
-                    <div class="mask"></div>
-                    <a href="https://ahmedtariq-lifestyle.com/en/quiz/" target="_blank"></a>
-                </div>
-                <div class="media-cell-desc">
-                    <h3>Ahmed Tariq Lifestyle</h3>
-                    <p class="category">Wellness Quiz</p>
-                </div>
-            </div>
+            <!-- /PORTFOLIO GRID -->
 
         </div>
+        <!-- /entry-content -->
 
-    </div>
+    </article>
 
-</article>
+</div>
+<!-- /page-single -->
 
 <!-- ===================================================== -->
-<!-- COMMENTED: FOOTER & CLOSING TAGS (KEEP FOR FUTURE)    -->
+<!-- COMMENTED: FOOTER & CLOSING TAGS                      -->
 <!-- ===================================================== -->
 <!--
         <footer class="site-footer">
@@ -160,7 +185,9 @@
 </div>
 -->
 
-<!-- REQUIRED SCRIPTS -->
+<!-- ===================================================== -->
+<!-- REQUIRED SCRIPTS (DO NOT COMMENT)                    -->
+<!-- ===================================================== -->
 <script src="js/jquery-isotope.js"></script>
 <script src="js/imagesloaded.js"></script>
 <script src="js/main.js"></script>
