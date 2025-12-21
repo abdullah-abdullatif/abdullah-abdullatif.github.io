@@ -1,206 +1,168 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js classic-page-layout" data-click-ripple-animation="yes">
+<html lang="en" class="no-js classic-page-layout">
 <head>
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Abdullah Abdullatif | Web Developer Portfolio">
-    <meta name="keywords" content="WordPress Developer, WooCommerce, Web Developer, Portfolio">
     <meta name="author" content="Abdullah Abdullatif">
-    <meta name="theme-color" content="#1755cf" />
 
     <title>Portfolio | Abdullah Abdullatif</title>
 
-    <!-- FONTS -->
-    <link rel="stylesheet" href="css/fonts/jost/jost.css">
-    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-
-    <!-- STYLES -->
+    <!-- STYLES (already loaded in index.html, kept for standalone use) -->
+    <!--
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="js/nprogress/nprogress.css">
-    <link rel="stylesheet" href="js/jquery.magnific-popup/jquery.magnific-popup.css">
-    <link rel="stylesheet" href="css/fonts/fontello/css/fontello.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/768.css">
+    -->
 
-    <!-- CORE -->
     <script src="js/jquery.js"></script>
 
 </head>
 
 <body>
 
-<!-- ================================================= -->
-<!-- REQUIRED AJAX WRAPPER (DO NOT REMOVE)             -->
-<!-- ================================================= -->
-<div class="content-wrap-inner">
+<!-- ===================================================== -->
+<!-- COMMENTED: FULL PAGE LAYOUT (NOT USED IN ONE-PAGE)    -->
+<!-- KEEP FOR FUTURE STANDALONE VERSION                   -->
+<!-- ===================================================== -->
+<!--
+<div id="page" class="hfeed site">
 
-    <div id="page" class="hfeed site">
+    <main id="main" class="site-main cd-main">
 
-        <!-- ================================================= -->
-        <!-- COMMENTED: MAIN WRAPPER (FOR FUTURE STANDALONE)   -->
-        <!-- ================================================= -->
-        <!--
-        <main id="main" class="site-main cd-main">
-        -->
-
-        <!-- ================================================= -->
-        <!-- COMMENTED: HERO / HEADER (HOME-ONLY FEATURE)      -->
-        <!-- ================================================= -->
-        <!--
         <header id="masthead" class="header" role="banner">
             <div class="header-wrap layout-full">
                 <img src="images/portfolio/my_picture_2025_very_wide_v2.jpg" alt="profile-image">
             </div>
         </header>
-        -->
+-->
 
-        <!-- ===================== -->
-        <!-- ACTIVE PAGE CONTENT   -->
-        <!-- ===================== -->
-        <div class="site-middle">
+<!-- ===================================================== -->
+<!-- ✅ ACTIVE CONTENT — REQUIRED BY YOUR PIXELWARS THEME -->
+<!-- ===================================================== -->
 
-            <div class="layout-medium">
-                <div id="primary" class="content-area">
-                    <div id="content" class="site-content">
+<article class="page hentry">
 
-                        <article class="page hentry">
+    <header class="entry-header">
+        <h1 class="entry-title">Portfolio</h1>
+        <p>Selected real-world projects I’ve built and currently manage.</p>
+    </header>
 
-                            <header class="entry-header">
-                                <h1 class="entry-title">Portfolio</h1>
-                                <p>Selected real-world projects I’ve built and currently manage.</p>
-                            </header>
+    <div class="entry-content">
 
-                            <div class="entry-content">
+        <!-- FILTERS -->
+        <ul id="filters" class="filters">
+            <li class="current"><a href="#" data-filter="*">All</a></li>
+            <li><a href="#" data-filter=".web">Web</a></li>
+            <li><a href="#" data-filter=".ecommerce">E-Commerce</a></li>
+            <li><a href="#" data-filter=".elearning">E-Learning</a></li>
+        </ul>
 
-                                <!-- FILTERS -->
-                                <ul id="filters" class="filters">
-                                    <li class="current"><a href="#" data-filter="*">All</a></li>
-                                    <li><a href="#" data-filter=".web">Web</a></li>
-                                    <li><a href="#" data-filter=".ecommerce">E-Commerce</a></li>
-                                    <li><a href="#" data-filter=".elearning">E-Learning</a></li>
-                                </ul>
+        <!-- PORTFOLIO GRID -->
+        <div class="portfolio-items media-grid masonry"
+             data-layout="masonry" data-item-width="360">
 
-                                <!-- PORTFOLIO GRID -->
-                                <div class="portfolio-items media-grid masonry"
-                                     data-layout="masonry" data-item-width="360">
+            <!-- MTown -->
+            <div class="media-cell web hentry">
+                <div class="media-box">
+                    <img src="images/portfolio/mtown.jpg" alt="MTown Real Estate">
+                    <div class="mask"></div>
+                    <a href="https://mtownre.com" target="_blank"></a>
+                </div>
+                <div class="media-cell-desc">
+                    <h3>MTown Real Estate</h3>
+                    <p class="category">Real Estate · UAE</p>
+                </div>
+            </div>
 
-                                    <!-- MTown -->
-                                    <div class="media-cell web hentry">
-                                        <div class="media-box">
-                                            <img src="images/portfolio/mtown.jpg" alt="MTown Real Estate">
-                                            <div class="mask"></div>
-                                            <a href="https://mtownre.com" target="_blank"></a>
-                                        </div>
-                                        <div class="media-cell-desc">
-                                            <h3>MTown Real Estate</h3>
-                                            <p class="category">Real Estate · UAE</p>
-                                        </div>
-                                    </div>
+            <!-- Sustain-X -->
+            <div class="media-cell web ecommerce hentry">
+                <div class="media-box">
+                    <img src="images/portfolio/sustainx.jpg" alt="Sustain-X">
+                    <div class="mask"></div>
+                    <a href="https://sustain-x.com" target="_blank"></a>
+                </div>
+                <div class="media-cell-desc">
+                    <h3>Sustain-X</h3>
+                    <p class="category">WooCommerce · Fitness</p>
+                </div>
+            </div>
 
-                                    <!-- Sustain-X -->
-                                    <div class="media-cell web ecommerce hentry">
-                                        <div class="media-box">
-                                            <img src="images/portfolio/sustainx.jpg" alt="Sustain-X">
-                                            <div class="mask"></div>
-                                            <a href="https://sustain-x.com" target="_blank"></a>
-                                        </div>
-                                        <div class="media-cell-desc">
-                                            <h3>Sustain-X</h3>
-                                            <p class="category">WooCommerce · Fitness</p>
-                                        </div>
-                                    </div>
+            <!-- Ednoor -->
+            <div class="media-cell web elearning hentry">
+                <div class="media-box">
+                    <img src="images/portfolio/ednoor.jpg" alt="Ednoor">
+                    <div class="mask"></div>
+                    <a href="https://ednoor.com" target="_blank"></a>
+                </div>
+                <div class="media-cell-desc">
+                    <h3>Ednoor</h3>
+                    <p class="category">E-Learning Platform</p>
+                </div>
+            </div>
 
-                                    <!-- Ednoor -->
-                                    <div class="media-cell web elearning hentry">
-                                        <div class="media-box">
-                                            <img src="images/portfolio/ednoor.jpg" alt="Ednoor">
-                                            <div class="mask"></div>
-                                            <a href="https://ednoor.com" target="_blank"></a>
-                                        </div>
-                                        <div class="media-cell-desc">
-                                            <h3>Ednoor</h3>
-                                            <p class="category">E-Learning Platform</p>
-                                        </div>
-                                    </div>
+            <!-- Super Math Academy -->
+            <div class="media-cell web elearning hentry">
+                <div class="media-box">
+                    <img src="images/portfolio/sma.jpg" alt="Super Math Academy">
+                    <div class="mask"></div>
+                    <a href="https://supermath-academy.com" target="_blank"></a>
+                </div>
+                <div class="media-cell-desc">
+                    <h3>Super Math Academy</h3>
+                    <p class="category">E-Learning Platform</p>
+                </div>
+            </div>
 
-                                    <!-- Super Math Academy -->
-                                    <div class="media-cell web elearning hentry">
-                                        <div class="media-box">
-                                            <img src="images/portfolio/sma.jpg" alt="Super Math Academy">
-                                            <div class="mask"></div>
-                                            <a href="https://supermath-academy.com" target="_blank"></a>
-                                        </div>
-                                        <div class="media-cell-desc">
-                                            <h3>Super Math Academy</h3>
-                                            <p class="category">E-Learning Platform</p>
-                                        </div>
-                                    </div>
+            <!-- Etriplesoft -->
+            <div class="media-cell web hentry">
+                <div class="media-box">
+                    <img src="images/portfolio/etriplesoft.jpg" alt="Etriplesoft">
+                    <div class="mask"></div>
+                    <a href="https://etriplesoft.com" target="_blank"></a>
+                </div>
+                <div class="media-cell-desc">
+                    <h3>Etriplesoft</h3>
+                    <p class="category">Software Company</p>
+                </div>
+            </div>
 
-                                    <!-- Etriplesoft -->
-                                    <div class="media-cell web hentry">
-                                        <div class="media-box">
-                                            <img src="images/portfolio/etriplesoft.jpg" alt="Etriplesoft">
-                                            <div class="mask"></div>
-                                            <a href="https://etriplesoft.com/" target="_blank"></a>
-                                        </div>
-                                        <div class="media-cell-desc">
-                                            <h3>Etriplesoft</h3>
-                                            <p class="category">Software Company</p>
-                                        </div>
-                                    </div>
-
-                                    <!-- Ahmed Tariq Lifestyle -->
-                                    <div class="media-cell web hentry">
-                                        <div class="media-box">
-                                            <img src="images/portfolio/ahmed-tariq.jpg" alt="Ahmed Tariq Lifestyle">
-                                            <div class="mask"></div>
-                                            <a href="https://ahmedtariq-lifestyle.com/en/quiz/" target="_blank"></a>
-                                        </div>
-                                        <div class="media-cell-desc">
-                                            <h3>Ahmed Tariq Lifestyle</h3>
-                                            <p class="category">Wellness Quiz</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!-- /PORTFOLIO GRID -->
-
-                            </div>
-
-                        </article>
-
-                    </div>
+            <!-- Ahmed Tariq Lifestyle -->
+            <div class="media-cell web hentry">
+                <div class="media-box">
+                    <img src="images/portfolio/ahmed-tariq.jpg" alt="Ahmed Tariq Lifestyle">
+                    <div class="mask"></div>
+                    <a href="https://ahmedtariq-lifestyle.com/en/quiz/" target="_blank"></a>
+                </div>
+                <div class="media-cell-desc">
+                    <h3>Ahmed Tariq Lifestyle</h3>
+                    <p class="category">Wellness Quiz</p>
                 </div>
             </div>
 
         </div>
 
-        <!-- ================================================= -->
-        <!-- COMMENTED: FOOTER (BASE LAYOUT ALREADY HAS ONE)   -->
-        <!-- ================================================= -->
-        <!--
-        <footer class="site-footer">
-            <div class="site-info">
-                <p>&copy; 2026 Abdullah Abdullatif</p>
-            </div>
-        </footer>
-        -->
-
-        <!--
-        </main>
-        -->
-
     </div>
 
+</article>
+
+<!-- ===================================================== -->
+<!-- COMMENTED: FOOTER & CLOSING TAGS (KEEP FOR FUTURE)    -->
+<!-- ===================================================== -->
+<!--
+        <footer class="site-footer">
+            <p>&copy; 2026 Abdullah Abdullatif</p>
+        </footer>
+
+    </main>
 </div>
-<!-- /content-wrap-inner -->
+-->
 
 <!-- REQUIRED SCRIPTS -->
 <script src="js/jquery-isotope.js"></script>
 <script src="js/imagesloaded.js"></script>
-<script src="js/jquery.magnific-popup/jquery.magnific-popup.js"></script>
 <script src="js/main.js"></script>
 
 </body>
